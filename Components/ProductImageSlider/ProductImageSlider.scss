@@ -1,0 +1,130 @@
+
+.product-images-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .swiper-button{
+      display: flex;
+    }
+  }
+
+  .swiper-slide-thumb-active {
+    border-bottom: 2px solid #ff5a00!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-top: none!important;
+  }
+
+  .image-swiper-button-prev {
+    left: 0;
+
+    img {
+      rotate: 180deg;
+    }
+  }
+
+  .image-swiper-button-next {
+    right: 0;
+    
+  }
+
+  .swiper-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #0000008a;
+    overflow: hidden;
+    background-color: transparent;
+    background-size: 100%;
+
+    img {
+      user-drag: none;
+      -webkit-user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  }
+
+  .swiper-button {
+    cursor: pointer;
+  }
+
+  .swiper-button:focus {
+    outline-offset: -3px;
+    outline-width: 2px;
+    outline-color: #008673;
+    outline-style: dotted;
+  }
+
+  .swiper-button:active {
+    background-image: radial-gradient(circle, #0000001f 1%, hsla(0, 0%, 100%, 0) 0);
+    background-position: 50%;
+    background-size: 15000%;
+    transition: background-size .3s;
+  }
+
+  .swiper-button:hover {
+    border: 2px solid rgba(0,0,0,0.5)
+  }
+
+  .swiper-button-disabled {
+    display: none!important;
+  }
+
+  .main-slider {
+    width: 100%;
+    max-width: 750px; // Limit the size of the main slider
+    height: auto;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .main-image {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .thumbnail-slider {
+    width: 100%;
+    max-width: 500px; // Match the main slider width
+    margin-top: 20px;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: 2px solid transparent;
+
+      &.swiper-slide-thumb-active {
+        border-color: #007bff; // Highlight active thumbnail
+      }
+
+      .thumbnail {
+        max-width: 80px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+
+
+//import './ProductImageSlider.scss'

@@ -1,0 +1,49 @@
+.sectionContainer {
+	width: 100%;
+    margin-top: 2em;
+	background-color: #fff;
+	overflow-x: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+    padding-top: .7em;
+
+	.sectionWrapper {
+		width: 100%;
+		max-width: 1740px;
+		overflow: hidden;
+		position: relative;
+
+		.sectionTitle {
+			font-size: 25px;
+			font-weight: 500;
+			padding: 0.7em 40px 0;
+		}
+
+		.sponsorowane {
+			color: rgba($color: #000000, $alpha: 0.7);
+			font-size: 1em;
+			padding: 0.7em 40px 0;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			cursor: default;
+
+			img {
+				max-width: 20px;
+				cursor: pointer;
+			}
+		}
+
+		.itemsWrapper {
+			display: flex;
+			align-items: center;
+			padding: 2em 1em;
+			transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+
+			.kidsDayImg {
+				height: 350px;
+			}
+		}
+	}
+}

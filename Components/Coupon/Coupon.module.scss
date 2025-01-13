@@ -1,0 +1,19 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	.couponImg {
+		display: none;
+	}
+
+	@media (min-width: 768px) {
+		.couponImg {
+			display: block;
+			width: 100%;
+			max-width: 2300px;
+			max-height: 72px;
+			margin-bottom: -3px;
+		}
+	}
+}

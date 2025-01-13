@@ -1,0 +1,49 @@
+.cardWrapper {
+	width: 224px;
+	height: 408px;
+	margin: 0 2em;
+    cursor: pointer;
+
+	.imgWrapper {
+		height: 224px;
+		width: 224px;
+
+		img {
+			max-width: 100%;
+            user-drag: none;
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+		}
+	}
+
+	.cardText {
+		list-style: none;
+		margin-top: 1.5em;
+
+		li:nth-last-child(-n + 2) {
+			color: #949494;
+		}
+
+		.itemTitle {
+			margin-bottom: 1em;
+		}
+
+		.price {
+			font-size: 30px;
+			font-weight: 500;
+			color: #1a3b4f;
+		}
+
+		.payIcon {
+			transform: translateY(5px);
+			height: 18px;
+		}
+	}
+}
+
+.cardWrapper:hover .cardText{
+    color: #2ab9a3cc;
+}
